@@ -1,8 +1,13 @@
 Component({
   data: {
+    // 是否显示对话框
+    visible5: true,
+    // 倒计时格式控制
     clockFormat: [' 时 ', ' 分 ', ' 秒 '],
+    // 重置计时器
     clearTimer: false,
-    targetTime2: new Date().getTime() + 6430000,
+    targetTime2: new Date().getTime() + 20000,
+    // 题目假数据
     arrayData: [{
         no: 1,
         numText: "3 × 7"
@@ -92,20 +97,65 @@ Component({
         no: 24,
         numText: "5 × 1"
       }
+    ],
+    actions5: [{
+        name: '取消'
+      },
+      {
+        name: '确认',
+        color: '#ed3f14',
+        loading: false
+      }
     ]
   },
   methods: {
-    //把iview框架里的方法抽取出来
-    $Toast(options) { 
-      const componentCtx = this.selectComponent("#toast");
-      componentCtx.handleShow(options);
-    },
+    // 倒计时监听事件
     myLinsterner(e) {
       this.setData({
         clearTimer: true,
         status: '结束'
       });
-    }
+    },
+    // 考试配置-模态框
+    handleClick5({
+      detail
+    }) {
+      if (detail.index === 0) {
+        this.setData({
+          visible5: false
+        });
+      } else {
+        const action = [...this.data.actions5];
+        action[1].loading = true;
+        this.setData({
+          actions5: action
+        });
 
+        setTimeout(() => {
+          action[1].loading = false;
+          this.setData({
+            clearTimer: false,
+            visible5: false,
+            actions5: action,
+            targetTime2: new Date().getTime() + 360000
+
+          });
+          console.log(this.clearTimer + this.data.targetTime2);
+          this.$Toast({
+            content: '生成题目成功，开始测试！',
+            type: 'success'
+          });
+        }, 2000);
+      }
+    },
+    //把iview框架里的方法抽取出来
+    $Toast(options) {
+      const componentCtx = this.selectComponent("#toast");
+      componentCtx.handleShow(options);
+    },
+    $Message(options) {
+      const componentCtx = this.selectComponent("#message");
+      componentCtx.handleShow(options);
+    },
   }
 });
