@@ -1,0 +1,21 @@
+<view class='mainClass'>
+  <!-- 训练模式说明 -->
+  <view>
+    <i-modal title="练习说明" visible="{{ testMessage }}" actions="{{ testAction  }}" bind:click="handleClick">
+      <view>练习模式将不计入评测系统！</view>
+    </i-modal>
+  </view>
+  <form bindsubmit='formSubmit'>
+    <i-row>
+      <!-- 循环数组生成题目 -->
+      <view wx:for="{{ arrayData }}" wx:key="no" wx:for-item="numData">
+        <i-col span="12" i-class="col-class">
+          <i-input value="" name="no{{ numData.no }}" title="No.{{ numData.no }}：    {{ numData.numText }} =" type='number' maxlength='6' placeholder='答案' />
+        </i-col>
+      </view>
+    </i-row>
+    <button form-type="submit" type="default" long="true" class='submitButton'>提交答案</button>
+  </form>
+</view>
+<i-message id="message"/>
+<i-toast id="toast"/>

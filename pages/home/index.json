@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "i-tab-bar": "../../dist/tab-bar/index",
+    "i-tab-bar-item": "../../dist/tab-bar-item/index",
+    "i-notice-bar": "../../dist/notice-bar/index",
+    "mainTab": "../../components/main/index",
+    "examTab": "../../components/exam/index",
+    "tutorialTab": "../../components/tutorial/index",
+    "mineTab": "../../components/mine/index"
+  }
+}

@@ -1,0 +1,174 @@
+<i-panel title="文章查询">
+  <view style="padding: 15px;">
+    <i-swipeout i-class="i-swipeout-demo-item" operateWidth="{{180}}" unclosable="{{true}}" toggle="{{toggle}}">
+      <view slot="content">
+        <view class="i-seach">
+          <i-input value="" placeholder="在此处输入需要查找的文章或作者（右滑搜索）" i-class='headSeach' />
+        </view>
+      </view>
+      <view slot="button" class="i-swipeout-demo-button-group" style="background:#2db7f5;">
+        <view class="i-swipeout-demo-button" style="width:180px" bindtap="actionsTap">
+          搜索
+        </view>
+      </view>
+    </i-swipeout>
+  </view>
+</i-panel>
+
+<i-panel title="">
+  <view style="padding: 3px;">
+    <view class="i-swipeout-demo">
+      <i-swipeout i-class="i-swipeout-demo-item" operateWidth="{{180}}" unclosable="{{true}}" toggle="{{toggle}}">
+        <view slot="content">
+          <view class="i-swipeout-image">
+            <i-icon size="20" color="#FFFFFF" type="feedback_fill"></i-icon>
+          </view>
+          <view class="i-swipeout-des">
+            <view class="i-swipeout-des-h2">第七个小矮人</view>
+            <view class="i-swipeout-des-detail">乐观善良的7个小矮人原本过着简单快乐的生活，不料诅咒公主的巫婆利用小矮人进入.</view>
+          </view>
+        </view>
+        <view slot="button" class="i-swipeout-demo-button-group" style="background:#2db7f5;">
+          <!-- 点赞 -->
+          <view class="i-swipeout-demo-button" style="width:60px" bindtap="actionsTap">
+            <i-icon size="32" type="like_fill"></i-icon>
+          </view>
+          <!-- 评论 -->
+          <view class="i-swipeout-demo-button" style="width:60px" bindtap="actionsTap">
+            <i-icon size="32" type="message_fill"></i-icon>
+          </view>
+          <!-- 删除 -->
+          <view class="i-swipeout-demo-button" style="width:60px" bindtap="actionsTap">
+            <i-icon size="32" type="delete_fill"></i-icon>
+          </view>
+        </view>
+      </i-swipeout>
+
+      <i-swipeout i-class="i-swipeout-demo-item" operateWidth="{{180}}" unclosable="{{true}}" toggle="{{toggle}}">
+        <view slot="content">
+          <view class="i-swipeout-image">
+            <i-icon size="20" color="#FFFFFF" type="feedback_fill"></i-icon>
+          </view>
+          <view class="i-swipeout-des">
+            <view class="i-swipeout-des-h2">第七个小矮人</view>
+            <view class="i-swipeout-des-detail">乐观善良的7个小矮人原本过着简单快乐的生活，不料诅咒公主的巫婆利用小矮人进入.</view>
+          </view>
+        </view>
+        <view slot="button" class="i-swipeout-demo-button-group" style="background:#2db7f5;">
+          <!-- 点赞 -->
+          <view class="i-swipeout-demo-button" style="width:60px" bindtap="actionsTap">
+            <i-icon size="32" type="like_fill"></i-icon>
+          </view>
+          <!-- 评论 -->
+          <view class="i-swipeout-demo-button" style="width:60px" bindtap="actionsTap">
+            <i-icon size="32" type="message_fill"></i-icon>
+          </view>
+          <!-- 删除 -->
+          <view class="i-swipeout-demo-button" style="width:60px" bindtap="actionsTap">
+            <i-icon size="32" type="delete_fill"></i-icon>
+          </view>
+        </view>
+      </i-swipeout>
+      <i-swipeout i-class="i-swipeout-demo-item" operateWidth="{{180}}" unclosable="{{true}}" toggle="{{toggle}}">
+        <view slot="content">
+          <view class="i-swipeout-image">
+            <i-icon size="20" color="#FFFFFF" type="feedback_fill"></i-icon>
+          </view>
+          <view class="i-swipeout-des">
+            <view class="i-swipeout-des-h2">第七个小矮人</view>
+            <view class="i-swipeout-des-detail">乐观善良的7个小矮人原本过着简单快乐的生活，不料诅咒公主的巫婆利用小矮人进入.</view>
+          </view>
+        </view>
+        <view slot="button" class="i-swipeout-demo-button-group" style="background:#2db7f5;">
+          <!-- 点赞 -->
+          <view class="i-swipeout-demo-button" style="width:60px" bindtap="actionsTap">
+            <i-icon size="32" type="like_fill"></i-icon>
+          </view>
+          <!-- 评论 -->
+          <view class="i-swipeout-demo-button" style="width:60px" bindtap="actionsTap">
+            <i-icon size="32" type="message_fill"></i-icon>
+          </view>
+          <!-- 删除 -->
+          <view class="i-swipeout-demo-button" style="width:60px" bindtap="actionsTap">
+            <i-icon size="32" type="delete_fill"></i-icon>
+          </view>
+        </view>
+      </i-swipeout>
+      <i-swipeout i-class="i-swipeout-demo-item" operateWidth="{{180}}" unclosable="{{true}}" toggle="{{toggle}}">
+        <view slot="content">
+          <view class="i-swipeout-image">
+            <i-icon size="20" color="#FFFFFF" type="feedback_fill"></i-icon>
+          </view>
+          <view class="i-swipeout-des">
+            <view class="i-swipeout-des-h2">第七个小矮人</view>
+            <view class="i-swipeout-des-detail">乐观善良的7个小矮人原本过着简单快乐的生活，不料诅咒公主的巫婆利用小矮人进入.</view>
+          </view>
+        </view>
+        <view slot="button" class="i-swipeout-demo-button-group" style="background:#2db7f5;">
+          <!-- 点赞 -->
+          <view class="i-swipeout-demo-button" style="width:60px" bindtap="actionsTap">
+            <i-icon size="32" type="like_fill"></i-icon>
+          </view>
+          <!-- 评论 -->
+          <view class="i-swipeout-demo-button" style="width:60px" bindtap="actionsTap">
+            <i-icon size="32" type="message_fill"></i-icon>
+          </view>
+          <!-- 删除 -->
+          <view class="i-swipeout-demo-button" style="width:60px" bindtap="actionsTap">
+            <i-icon size="32" type="delete_fill"></i-icon>
+          </view>
+        </view>
+      </i-swipeout>
+      <i-swipeout i-class="i-swipeout-demo-item" operateWidth="{{180}}" unclosable="{{true}}" toggle="{{toggle}}">
+        <view slot="content">
+          <view class="i-swipeout-image">
+            <i-icon size="20" color="#FFFFFF" type="feedback_fill"></i-icon>
+          </view>
+          <view class="i-swipeout-des">
+            <view class="i-swipeout-des-h2">第七个小矮人</view>
+            <view class="i-swipeout-des-detail">乐观善良的7个小矮人原本过着简单快乐的生活，不料诅咒公主的巫婆利用小矮人进入.</view>
+          </view>
+        </view>
+        <view slot="button" class="i-swipeout-demo-button-group" style="background:#2db7f5;">
+          <!-- 点赞 -->
+          <view class="i-swipeout-demo-button" style="width:60px" bindtap="actionsTap">
+            <i-icon size="32" type="like_fill"></i-icon>
+          </view>
+          <!-- 评论 -->
+          <view class="i-swipeout-demo-button" style="width:60px" bindtap="actionsTap">
+            <i-icon size="32" type="message_fill"></i-icon>
+          </view>
+          <!-- 删除 -->
+          <view class="i-swipeout-demo-button" style="width:60px" bindtap="actionsTap">
+            <i-icon size="32" type="delete_fill"></i-icon>
+          </view>
+        </view>
+      </i-swipeout>
+      <i-swipeout i-class="i-swipeout-demo-item" operateWidth="{{180}}" unclosable="{{true}}" toggle="{{toggle}}">
+        <view slot="content">
+          <view class="i-swipeout-image">
+            <i-icon size="20" color="#FFFFFF" type="feedback_fill"></i-icon>
+          </view>
+          <view class="i-swipeout-des">
+            <view class="i-swipeout-des-h2">第七个小矮人</view>
+            <view class="i-swipeout-des-detail">乐观善良的7个小矮人原本过着简单快乐的生活，不料诅咒公主的巫婆利用小矮人进入.</view>
+          </view>
+        </view>
+        <view slot="button" class="i-swipeout-demo-button-group" style="background:#2db7f5;">
+          <!-- 点赞 -->
+          <view class="i-swipeout-demo-button" style="width:60px" bindtap="actionsTap">
+            <i-icon size="32" type="like_fill"></i-icon>
+          </view>
+          <!-- 评论 -->
+          <view class="i-swipeout-demo-button" style="width:60px" bindtap="actionsTap">
+            <i-icon size="32" type="message_fill"></i-icon>
+          </view>
+          <!-- 删除 -->
+          <view class="i-swipeout-demo-button" style="width:60px" bindtap="actionsTap">
+            <i-icon size="32" type="delete_fill"></i-icon>
+          </view>
+        </view>
+      </i-swipeout>
+    </view>
+  </view>
+</i-panel>

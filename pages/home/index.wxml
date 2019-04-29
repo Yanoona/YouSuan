@@ -1,0 +1,27 @@
+<view class='homeClass'>
+  <i-notice-bar wx:if="{{ isShowNotice }}" icon="systemprompt" closable loop="true" speed="1500">
+    {{systemNotice}}
+  </i-notice-bar>
+  <view class='content'>
+    <view wx:if="{{ mainTab }}">
+      <mainTab></mainTab>
+    </view>
+    <view wx:if="{{ examTab }}" id='exam'>
+      <examTab></examTab>
+    </view>
+    <view wx:if="{{ tutorialTab }}">
+      <tutorialTab></tutorialTab>
+    </view>
+    <view wx:if="{{ mineTab }}">
+      <mineTab></mineTab>
+    </view>
+  </view>
+  <view class='homeTabbar'>
+    <i-tab-bar current="{{ current }}" bindchange="handleChange">
+      <i-tab-bar-item key="tutorial" icon="task" current-icon="task_fill" title="教程"></i-tab-bar-item>
+      <i-tab-bar-item key="main" icon="brush" current-icon="brush_fill" title="练习"></i-tab-bar-item>
+      <i-tab-bar-item key="exam" icon="time" current-icon="time_fill" title="考试"></i-tab-bar-item>
+      <i-tab-bar-item key="mine" icon="mine" current-icon="mine_fill" title="我"></i-tab-bar-item>
+    </i-tab-bar>
+  </view>
+</view>

@@ -1,0 +1,14 @@
+/* pages/main/main.wxss */
+page{
+  height: 100%;
+}
+.homeClass {
+  width: 100%;
+  height: 100%;
+}
+.homeTabbar{
+  width: 100%;
+  align-content: center;
+  position: fixed;
+  bottom: 0px;
+}
