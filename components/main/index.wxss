@@ -5,6 +5,5 @@
 .submitButton{
   width: 100%;
   align-content: center;
-  position: fixed;
-  bottom: 50px;
+  color: #2d8cf0;
 }

@@ -9,6 +9,7 @@
     "i-icon": "../../dist/icon/index",
     "i-action-sheet": "../../dist/action-sheet/index",
     "i-input": "../../dist/input/index",
-    "i-panel": "../../dist/panel/index"
+    "i-panel": "../../dist/panel/index",
+    "i-switch": "../../dist/switch/index"
   }
 }

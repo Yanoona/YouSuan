@@ -1,10 +1,29 @@
-<i-button type="ghost" bind:click="handleText">只显示文本</i-button>
-<i-button type="ghost" bind:click="handleSuccess">成功</i-button>
-<i-button type="ghost" bind:click="handleWarning">警告</i-button>
-<i-button type="ghost" bind:click="handleError">错误</i-button>
-<i-button type="ghost" bind:click="handleLoading">Loading</i-button>
-<i-button type="ghost" bind:click="handleIcon">使用图标</i-button>
-<i-button type="ghost" bind:click="handleImage">使用自定义图片</i-button>
-<i-button type="ghost" bind:click="handleMask">无遮罩层</i-button>
+<view class='head'>
+  <i-panel class="cell-panel-demo">
+    <i-cell i-class="examClock">
+      <view class="view-wrap">
+        <i-count-down target="{{ targetTime2 }}" bindcallback="myLinsterner" format="{{ clockFormat }}" clear-timer="{{ clearTimer }}" style="color: #fff;"></i-count-down>
+      </view>
+    </i-cell>
+  </i-panel>
+</view>
+<view class='content'>
+  <form bindsubmit='formSubmit'>
+    <i-panel title="答题区">
+      <view style="padding: 10px;">
+        <i-row>
+          <!-- 循环数组生成题目 -->
+          <view wx:for="{{ arrayData }}" wx:key="no" wx:for-item="numData">
+            <i-col span="12" i-class="col-class">
+              <i-input value="" name="no{{ numData.no }}" title="No.{{ numData.no }}：    {{ numData.numText }} =" type='number' maxlength='6' placeholder='答案' />
+            </i-col>
+          </view>
+        </i-row>
+      </view>
+    </i-panel>
 
+    <i-divider content="确认完成后再提交"></i-divider>
+    <button form-type="submit" type="primary" long="true" class='submitButton'>提交答案</button>
+  </form>
+</view>
 <i-toast id="toast" />
