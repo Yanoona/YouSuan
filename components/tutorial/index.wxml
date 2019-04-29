@@ -43,7 +43,6 @@
           </view>
         </view>
       </i-swipeout>
-
       <i-swipeout i-class="i-swipeout-demo-item" operateWidth="{{180}}" unclosable="{{true}}" toggle="{{toggle}}">
         <view slot="content">
           <view class="i-swipeout-image">

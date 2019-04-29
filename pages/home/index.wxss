@@ -11,4 +11,9 @@ page{
   align-content: center;
   position: fixed;
   bottom: 0px;
+  z-index: 99999;
+}
+.text{
+  width: 100%;
+  height: 55px;
 }

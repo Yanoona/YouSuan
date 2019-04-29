@@ -16,6 +16,7 @@
       <mineTab></mineTab>
     </view>
   </view>
+  <view class='text'></view>
   <view class='homeTabbar'>
     <i-tab-bar current="{{ current }}" bindchange="handleChange">
       <i-tab-bar-item key="tutorial" icon="task" current-icon="task_fill" title="教程"></i-tab-bar-item>

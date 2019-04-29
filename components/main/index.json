@@ -8,6 +8,8 @@
       "i-modal": "../../dist/modal/index",
       "i-message": "../../dist/message/index",
       "i-button": "../../dist/button/index",
-      "i-toast": "../../dist/toast/index"
+      "i-toast": "../../dist/toast/index",
+      "i-divider": "../../dist/divider/index",
+      "i-panel": "../../dist/panel/index"
   }
 }
