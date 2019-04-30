@@ -1,3 +1,7 @@
+<i-modal title="测试配置" visible="{{ visible5 }}" actions="{{ actions5 }}" bind:click="handleClick5">
+    <view>删除后无法恢复哦</view>
+</i-modal>
+
 <view class='head'>
   <i-panel class="cell-panel-demo">
     <i-cell i-class="examClock">
@@ -26,4 +30,5 @@
     <button form-type="submit" type="primary" long="true" class='submitButton'>提交答案</button>
   </form>
 </view>
+<i-message id="message" />
 <i-toast id="toast" />
