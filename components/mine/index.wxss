@@ -1,1 +1,4 @@
 /* pages/mine/mine.wxss */
+.listPanel{
+  margin-top: 10px;
+}

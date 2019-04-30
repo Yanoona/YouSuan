@@ -3,7 +3,7 @@
     <i-swipeout i-class="i-swipeout-demo-item" operateWidth="{{180}}" unclosable="{{true}}" toggle="{{toggle}}">
       <view slot="content">
         <view class="i-seach">
-          <i-input value="" placeholder="在此处输入需要查找的文章或作者（右滑搜索）" i-class='headSeach' />
+          <i-input value="" placeholder="在此处输入需要查找的文章或作者（左滑搜索）" i-class='headSeach' />
         </view>
       </view>
       <view slot="button" class="i-swipeout-demo-button-group" style="background:#2db7f5;">
