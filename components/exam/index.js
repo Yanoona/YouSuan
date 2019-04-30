@@ -6,7 +6,7 @@ Component({
     clockFormat: [' 时 ', ' 分 ', ' 秒 '],
     // 重置计时器
     clearTimer: false,
-    targetTime2: new Date().getTime() + 20000,
+    targetTime2: new Date().getTime() + 6500000,
     // 题目假数据
     arrayData: [{
         no: 1,
@@ -137,7 +137,7 @@ Component({
             clearTimer: false,
             visible5: false,
             actions5: action,
-            targetTime2: new Date().getTime() + 360000
+            targetTime2: new Date().getTime() + 6584400
 
           });
           console.log(this.clearTimer + this.data.targetTime2);

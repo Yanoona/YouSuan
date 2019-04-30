@@ -1,4 +1,14 @@
 {
   "navigationBarTitleText": "用户个人信息",
-  "usingComponents": {}
+  "usingComponents": {
+    "i-radio-group": "../../dist/radio-group/index",
+    "i-radio": "../../dist/radio/index",
+    "i-panel": "../../dist/panel/index",
+    "i-input": "../../dist/input/index",
+    "i-row": "../../dist/row/index",
+    "i-col": "../../dist/col/index",
+    "i-divider": "../../dist/divider/index",
+    "i-button": "../../dist/button/index",
+    "i-alert": "../../dist/alert/index"
+  }
 }

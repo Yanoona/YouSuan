@@ -1,2 +1,44 @@
 <!--pages/userinfo/index.wxml-->
-<text>pages/userinfo/index.wxml</text>
+<form bindsubmit='formSubmit' bindreset='formRest'>
+  <i-panel title="">
+
+    <i-input name="userName" value="{{ userName }}" title="用户名" autofocus placeholder="请输入用户名" />
+    <i-alert type="error" wx:if="{{ userNameError }}" show-icon desc>
+      {{ userNameErrorText }}
+    </i-alert>
+    <i-input name="phone" value="{{ phone }}" type="number" title="联系电话" placeholder="请输入手机号" />
+    <i-alert type="error" wx:if="{{ phoneError }}" show-icon desc>
+      {{ phoneErrorText }}
+    </i-alert>
+    <i-input name="userContent" value="{{ userContent }}" type="textarea" title="个性签名" placeholder="请输入个性签名(最多50字)" maxlength="50" />
+    <i-alert type="error" wx:if="{{ userContentError }}" show-icon desc>
+      {{ userContentErrorText }}
+    </i-alert>
+    <i-row>
+      <i-col span="5" i-class="col-class1">
+        <i-input title="性别" disabled='true' />
+      </i-col>
+      <i-col span="19" i-class="col-class">
+        <i-radio-group current="{{current}}" bindchange="handleSexChange">
+          <i-radio wx:for="{{sex}}" position="left" wx:key="{{item.id}}" value="{{item.name}}" i-class='sexRadio'>
+          </i-radio>
+        </i-radio-group>
+      </i-col>
+    </i-row>
+    <i-divider content="操作区" color="#2d8cf0" lineColor="#2d8cf0"></i-divider>
+    <i-row>
+      <i-col span="8" i-class="col-class">
+        <i-button bind:click="handleClick" type="ghost" shape="circle" size="small">修改</i-button>
+      </i-col>
+      <i-col span="8" i-class="col-class">
+        <i-button bind:click="handleClick" type="info" shape="circle" size="small">重置</i-button>
+      </i-col>
+      <i-col span="8" i-class="col-class">
+        <i-button bind:click="handleClick" type="success" shape="circle" size="small">提交</i-button>
+      </i-col>
+    </i-row>
+  </i-panel>
+</form>
+
+<i-toast id="toast"></i-toast>
+<i-message id="message"></i-message>
