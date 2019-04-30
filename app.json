@@ -5,8 +5,7 @@
     "pages/userinfo/index",
     "pages/scope/index",
     "pages/scopeday/index",
-    "pages/scopeweek/index",
-    "pages/scopemonth/index"
+    "pages/scopeweek/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
