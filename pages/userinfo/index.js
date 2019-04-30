@@ -5,7 +5,29 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    // 文本值
+    userName,
+    phone,
+    userContent,
+    // 错误提示
+    userNameError: false,
+    phoneError: false,
+    userContentError: false,
+    // 错误提示文本
+    userNameErrorText: "",
+    phoneErrorText: "",
+    userContentErrorText: "",
+    sex: [{
+      id: 1,
+      name: '保密',
+    }, {
+      id: 2,
+      name: '男'
+    }, {
+      id: 3,
+      name: '女'
+    }],
+    current: '保密'
   },
 
   /**
@@ -62,5 +84,25 @@ Page({
    */
   onShareAppMessage: function() {
 
+  },
+
+  /**
+   * 单选按钮切换
+   */
+  handleSexChange({
+    detail = {}
+  }) {
+    this.setData({
+      current: detail.value
+    });
+  },
+  //把iview框架里的方法抽取出来
+  $Toast(options) {
+    const componentCtx = this.selectComponent("#toast");
+    componentCtx.handleShow(options);
+  },
+  $Message(options) {
+    const componentCtx = this.selectComponent("#message");
+    componentCtx.handleShow(options);
   }
 })
