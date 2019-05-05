@@ -4,9 +4,8 @@
     "pages/logs/index",
     "pages/userinfo/index",
     "pages/scope/index",
-    "pages/scopeday/index",
-    "pages/scopeweek/index",
-    "pages/scopemonth/index"
+    "pages/scopeone/index",
+    "pages/scopeten/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

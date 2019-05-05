@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "成绩统计(最近十天)",
+  "usingComponents": {
+    "i-row": "../../dist/row/index",
+    "i-col": "../../dist/col/index",
+    "i-panel": "../../dist/panel/index",
+    "i-input": "../../dist/input/index"
+  }
+}

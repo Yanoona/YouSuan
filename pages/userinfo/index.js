@@ -6,9 +6,9 @@ Page({
    */
   data: {
     // 文本值
-    userName,
-    phone,
-    userContent,
+    userName: "",
+    phone: "",
+    userContent: "",
     // 错误提示
     userNameError: false,
     phoneError: false,

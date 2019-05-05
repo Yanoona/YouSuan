@@ -1,4 +1,4 @@
-// pages/scope/index.js
+// pages/scopeday/index.js
 Page({
 
   /**

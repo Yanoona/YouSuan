@@ -1,11 +1,16 @@
-// pages/scopeweek/index.js
+// pages/scopemonth/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    value1: new Date().getTime(),
+    value2: "15分30秒",
+    value3: 75,
+    value4: new Date().getTime(),
+    value5: "14分30秒",
+    value6: 86
   },
 
   /**

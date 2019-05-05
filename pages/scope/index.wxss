@@ -1,1 +1,4 @@
 /* pages/scope/index.wxss */
+.col-class{
+  color: #80848f;
+}

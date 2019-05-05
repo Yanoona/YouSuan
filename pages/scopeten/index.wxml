@@ -1,0 +1,40 @@
+<!--pages/scope/index.wxml-->
+<i-panel title="最近测试信息" i-class="panelClass">
+  <view style="padding: 5px;">
+    <i-row>
+      <i-col span="24" i-class="col-class">
+        <i-input value="{{ value1 }}" title="日期" disabled='false' />
+      </i-col>
+    </i-row>
+    <i-row>
+      <i-col span="24" i-class="col-class">
+        <i-input value="{{ value2 }}" title="耗时" disabled='false' />
+      </i-col>
+    </i-row>
+    <i-row>
+      <i-col span="24" i-class="col-class">
+        <i-input value="{{ value3 }}" title="成绩" disabled='false' />
+      </i-col>
+    </i-row>
+  </view>
+</i-panel>
+
+<i-panel title="对比的测试信息" i-class="panelClass">
+  <view style="padding: 5px;">
+    <i-row>
+      <i-col span="24" i-class="col-class">
+        <i-input value="{{ value4 }}" title="日期" disabled='true' />
+      </i-col>
+    </i-row>
+    <i-row>
+      <i-col span="24" i-class="col-class">
+        <i-input value="{{ value5 }}" title="耗时" disabled='true' />
+      </i-col>
+    </i-row>
+    <i-row>
+      <i-col span="24" i-class="col-class">
+        <i-input value="{{ value6 }}" title="成绩" disabled='true' />
+      </i-col>
+    </i-row>
+  </view>
+</i-panel>
